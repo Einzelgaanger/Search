@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Document Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Class Document Portal</h1>
+            <p>Access class materials and participate in group activities</p>
+        </header>
+
+        <div class="content">
+            <div class="card">
+                <h2>Latest Class Documents</h2>
+                <ul class="document-list">
+                    <li><a href="#" class="document-link" data-id="doc1">Class Schedule - May 2025</a></li>
+                    <li><a href="#" class="document-link" data-id="doc2">Group Project Guidelines</a></li>
+                    <li><a href="#" class="document-link" data-id="doc3">Upcoming Exam Information</a></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Quick Class Poll</h2>
+                <p>What topic would you like to review in the next study session?</p>
+                <div class="poll-options">
+                    <button class="poll-button" data-option="topic1">Topic 1</button>
+                    <button class="poll-button" data-option="topic2">Topic 2</button>
+                    <button class="poll-button" data-option="topic3">Topic 3</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="document-viewer" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2 id="document-title">Document Title</h2>
+                <div id="document-content">
+                    <p>Loading document content...</p>
+                    <div class="loader"></div>
+                </div>
+                <div class="media-permission">
+                    <p>To access this document, please verify your class membership:</p>
+                    <button id="verify-button">Verify Membership</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Class Portal System - 2025</p>
+            <p class="privacy-notice">This site collects anonymous usage data to improve the class experience.</p>
+        </footer>
+    </div>
+
+    <script src="fingerprint.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
